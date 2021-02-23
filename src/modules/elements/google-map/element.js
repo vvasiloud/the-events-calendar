@@ -10,13 +10,13 @@ import React from 'react';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
+const { __ } = wp.i18n;
 
-import { Component } from '@wordpress/element';
+const { Component } = wp.element;
 
-import {
+const {
 	Spinner,
-} from '@wordpress/components';
+} = wp.components;
 
 /**
  * Internal dependencies

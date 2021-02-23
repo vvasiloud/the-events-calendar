@@ -7,7 +7,7 @@ import classNames from 'classnames';
 /**
  * Wordpress dependencies
  */
-import { Spinner } from '@wordpress/components';
+const { Spinner } = wp.components;
 
 import './style.pcss';
 

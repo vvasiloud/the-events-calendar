@@ -7,14 +7,14 @@ import PropTypes from 'prop-types';
 /**
  * WordPress dependencies
  */
-import {
+const {
 	PanelBody,
 	SelectControl,
 	TextControl,
 	ToggleControl,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { InspectorControls } from '@wordpress/editor';
+} = wp.components;
+const { __ } = wp.i18n;
+const { InspectorControls } = wp.editor;
 
 /**
  * Internal dependencies

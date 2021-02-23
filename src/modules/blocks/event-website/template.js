@@ -9,9 +9,9 @@ import AutosizeInput from 'react-input-autosize';
 /**
  * WordPress dependencies
  */
-import { Dashicon } from '@wordpress/components';
-import { URLInput } from '@wordpress/editor';
-import { __ } from '@wordpress/i18n';
+const { Dashicon } = wp.components;
+const { URLInput } = wp.editor;
+const { __ } = wp.i18n;
 
 /**
  * Internal dependencies

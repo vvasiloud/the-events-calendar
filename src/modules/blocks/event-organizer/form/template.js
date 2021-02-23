@@ -9,9 +9,9 @@ import validator from 'validator';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import { RichText } from '@wordpress/editor';
-import { __ } from '@wordpress/i18n';
+const { Component } = wp.element;
+const { RichText } = wp.editor;
+const { __ } = wp.i18n;
 
 import './style.pcss';
 

@@ -10,15 +10,15 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import {
+const { __ } = wp.i18n;
+const {
 	Spinner,
 	Placeholder,
 	ToggleControl,
 	PanelBody,
 	Dashicon,
-} from '@wordpress/components';
-import { InspectorControls } from '@wordpress/editor';
+} = wp.components;
+const { InspectorControls } = wp.editor;
 
 /**
  * Internal dependencies

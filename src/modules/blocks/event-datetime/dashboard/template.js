@@ -8,10 +8,10 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import {
+const {
 	ToggleControl,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+} = wp.components;
+const { __ } = wp.i18n;
 
 /**
  * Internal dependencies

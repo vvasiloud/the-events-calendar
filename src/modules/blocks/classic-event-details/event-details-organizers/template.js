@@ -8,8 +8,8 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Dropdown, IconButton, Dashicon } from '@wordpress/components';
+const { __ } = wp.i18n;
+const { Dropdown, IconButton, Dashicon } = wp.components;
 
 /**
  * Internal dependencies

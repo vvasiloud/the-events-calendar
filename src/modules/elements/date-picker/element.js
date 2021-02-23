@@ -8,11 +8,11 @@ import { PropTypes } from 'prop-types';
 /**
  * WordPress dependencies
  */
-import { Component } from '@wordpress/element';
-import {
-	DatePicker as WPDatePicker,
+const { Component } = wp.element;
+const {
+	DatePicker: WPDatePicker,
 	Dropdown,
-} from '@wordpress/components';
+} = wp.components;
 
 /**
  * Internal dependencies

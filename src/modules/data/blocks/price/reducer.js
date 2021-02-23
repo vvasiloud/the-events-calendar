@@ -1,7 +1,7 @@
 /**
  * Wordpress dependenciess
  */
-import { __ } from '@wordpress/i18n';
+const { __ } = wp.i18n;
 
 /**
  * Internal dependencies

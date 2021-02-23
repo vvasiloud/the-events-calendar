@@ -2,7 +2,7 @@
  * External dependencies
  */
 import { put, call, select, take, all } from 'redux-saga/effects';
-import { applyFilters } from '@wordpress/hooks';
+const { applyFilters } = wp.hooks;
 
 /**
  * Internal Dependencies

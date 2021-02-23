@@ -9,9 +9,9 @@ import AutosizeInput from 'react-input-autosize';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { ToggleControl, TextControl, PanelBody } from '@wordpress/components';
-import { PlainText, InspectorControls } from '@wordpress/editor';
+const { __ } = wp.i18n;
+const { ToggleControl, TextControl, PanelBody } = wp.components;
+const { PlainText, InspectorControls } = wp.editor;
 
 /**
  * Internal dependencies

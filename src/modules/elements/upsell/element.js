@@ -6,7 +6,7 @@ import React from 'react';
 /**
  * WordPress dependencies
  */
-import { __, _x } from '@wordpress/i18n';
+const { __, _x } = wp.i18n;
 
 /**
  * Internal dependencies

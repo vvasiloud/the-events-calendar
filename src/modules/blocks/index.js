@@ -1,7 +1,7 @@
 /**
  * External Dependencies
  */
-import { registerBlockType } from '@wordpress/blocks';
+const { registerBlockType } = wp.blocks;
 
 /**
  * Internal Dependencies

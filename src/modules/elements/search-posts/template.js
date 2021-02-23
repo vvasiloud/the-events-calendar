@@ -10,13 +10,13 @@ import { decode } from 'he';
 /**
  * WordPress dependencies
  */
-import {
+const {
 	Dropdown,
 	IconButton,
 	Dashicon,
 	Spinner,
 	Placeholder,
-} from '@wordpress/components';
+} = wp.components;
 
 /**
  * Internal dependencies

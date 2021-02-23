@@ -8,8 +8,8 @@ import classNames from 'classnames';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { PlainText } from '@wordpress/editor';
+const { __ } = wp.i18n;
+const { PlainText } = wp.editor;
 
 /**
  * Internal dependencies

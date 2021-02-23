@@ -8,12 +8,12 @@ import { isEmpty } from 'lodash';
 /**
  * WordPress dependencies
  */
-import {
+const {
 	Spinner,
 	PanelBody,
-} from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
-import { InspectorControls } from '@wordpress/editor';
+} = wp.components;
+const { __ } = wp.i18n;
+const { InspectorControls } = wp.editor;
 
 /**
  * Internal dependencies

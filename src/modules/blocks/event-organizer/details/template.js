@@ -9,7 +9,7 @@ import { decode } from 'he';
 /**
  * WordPress dependencies
  */
-import { Dashicon } from '@wordpress/components';
+const { Dashicon } = wp.components;
 import { toFields } from '@moderntribe/events/elements/organizer-form/utils';
 import { Close as CloseIcon } from '@moderntribe/common/icons';
 import './style.pcss';

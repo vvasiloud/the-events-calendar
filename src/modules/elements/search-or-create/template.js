@@ -9,9 +9,9 @@ import { decode } from 'he';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Component } from '@wordpress/element';
-import { Spinner } from '@wordpress/components';
+const { __ } = wp.i18n;
+const { Component } = wp.element;
+const { Spinner } = wp.components;
 
 /**
  * Internal dependencies

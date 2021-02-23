@@ -9,13 +9,13 @@ import { decode } from 'he';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Component } from '@wordpress/element';
+const { __ } = wp.i18n;
+const { Component } = wp.element;
 
-import {
+const {
 	Spinner,
 	Placeholder,
-} from '@wordpress/components';
+} = wp.components;
 
 export default class VenueDetails extends Component {
 	static defaultProps = {

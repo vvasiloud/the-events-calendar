@@ -6,10 +6,10 @@ import React from 'react';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Component } from '@wordpress/element';
-import { withSelect } from '@wordpress/data';
-import { Placeholder, Spinner } from '@wordpress/components';
+const { __ } = wp.i18n;
+const { Component } = wp.element;
+const { withSelect } = wp.data;
+const { Placeholder, Spinner } = wp.components;
 
 /**
  * Internal dependencies

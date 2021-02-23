@@ -10,7 +10,7 @@ import moment from 'moment/moment';
 /**
  * Wordpress dependencies
  */
-import { Component } from '@wordpress/element';
+const { Component } = wp.element;
 
 /**
  * Internal dependencies

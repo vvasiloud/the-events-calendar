@@ -8,8 +8,8 @@ import { unescape, trim, isEmpty } from 'lodash';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Dashicon, IconButton } from '@wordpress/components';
+const { __ } = wp.i18n;
+const { Dashicon, IconButton } = wp.components;
 
 /**
  * Internal dependencies

@@ -7,12 +7,12 @@ import { isFunction, values } from 'lodash';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import {
+const { __ } = wp.i18n;
+const {
 	Spinner,
 	Placeholder,
-} from '@wordpress/components';
-import { Component } from '@wordpress/element';
+} = wp.components;
+const { Component } = wp.element;
 
 /**
  * Internal dependencies

@@ -6,10 +6,10 @@ import { get, values, noop, pick } from 'lodash';
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { select } from '@wordpress/data';
-import { Component } from '@wordpress/element';
-import { RichText } from '@wordpress/editor';
+const { __ } = wp.i18n;
+const { select } = wp.data;
+const { Component } = wp.element;
+const { RichText } = wp.editor;
 
 /**
  * Internal dependencies
