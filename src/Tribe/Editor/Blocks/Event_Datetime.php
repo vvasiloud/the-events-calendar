@@ -98,7 +98,7 @@ extends Tribe__Editor__Blocks__Abstract {
 				],
 				'timeZoneLabel' => [
 					'type'    => 'string',
-					'default' => class_exists( 'Tribe__Timezones' ) ? Tribe__Timezones::wp_timezone_string() : get_option( 'timezone_string', 'UTC' ),
+					'default' => $this->get_timezone_label(),
 				],
 				// Only available for classic users.
 				'cost'          => [
@@ -130,5 +130,24 @@ extends Tribe__Editor__Blocks__Abstract {
 		$block_data = apply_filters( 'tribe_block_block_data_' . $this->slug(), $block_data, $this );
 
 		return $block_data;
+	}
+	
+	/**
+	 * Returns a value for the timezone label, using an abbreviation (e.g. GMT) if possible
+	 *
+	 * @return string The timezone label string
+	 */
+	public function get_timezone_label() {
+		if ( ! class_exists( 'Tribe__Timezones' ) ) {
+			return get_option( 'timezone_string', 'UTC' );
+		}
+		
+		$abbr = Tribe__Timezones::wp_timezone_abbr( tribe_get_start_date() );
+		
+		if ( ! $abbr ) {
+			return Tribe__Timezones::wp_timezone_string();
+		}
+		
+		return $abbr;
 	}
 }
