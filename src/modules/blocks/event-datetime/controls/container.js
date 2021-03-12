@@ -35,7 +35,7 @@ const mapDispatchToProps = ( dispatch, { setAttributes } ) => ( {
 		dispatch( dateTimeActions.setSeparatorTime( value ) );
 	},
 	setTimeZone: ( value ) => {
-		setAttributes( { timeZone: value } );
+		setAttributes( { timeZoneLabel: value } );
 		dispatch( dateTimeActions.setTimeZone( value ) );
 	},
 } );
