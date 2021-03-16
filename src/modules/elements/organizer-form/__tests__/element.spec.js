@@ -59,7 +59,7 @@ describe( 'OrganizerForm', () => {
 			method: 'POST',
 			data: {
 				title: state.title,
-				status: 'publish',
+				status: 'draft',
 				meta: {
 					_OrganizerEmail: state.email,
 					_OrganizerPhone: state.phone,

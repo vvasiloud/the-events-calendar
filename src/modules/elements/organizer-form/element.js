@@ -63,8 +63,7 @@ class OrganizerForm extends Component {
 
 		this.updateOrganizer( {
 			title: title,
-			// For now every Organizer goes are publish
-			status: 'publish',
+			status: 'draft',
 			meta: {
 				_OrganizerEmail: email,
 				_OrganizerPhone: phone,
