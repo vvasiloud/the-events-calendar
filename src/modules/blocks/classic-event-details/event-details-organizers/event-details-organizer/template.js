@@ -33,13 +33,14 @@ const EventDetailsOrganizer = ( props ) => {
 		block,
 		volatile,
 		onRemoveClick,
+		details,
 	} ) => (
 		! ( block || volatile )
 		&& (
 			<IconButton
 				className="tribe-editor__btn tribe-editor__btn--action"
 				label={ __( 'Remove Organizer', 'the-events-calendar' ) }
-				onClick={ onRemoveClick( organizerId ) }
+				onClick={ onRemoveClick( organizerId, details ) }
 				icon={ <Dashicon icon="no" /> }
 			/>
 		)

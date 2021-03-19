@@ -16,6 +16,9 @@ import { actions as detailsActions } from '@moderntribe/events/data/details';
 import { withStore } from '@moderntribe/common/hoc';
 import EventDetailsOrganizers from './template';
 
+import { actions as requestActions } from '@moderntribe/common/store/middlewares/request';
+import { getPostType, getDetails } from '@moderntribe/events/data/details/selectors';
+
 /**
  * Module Code
  */
@@ -40,7 +43,21 @@ const mergeProps = ( stateProps, dispatchProps, ownProps ) => {
 			dispatch( detailsActions.setDetails( id, details ) );
 			dispatch( organizersActions.addOrganizerInClassic( id ) );
 		},
-		removeOrganizer: ( id ) => () => {
+		removeOrganizer: ( id, details ) => () => {
+			const { status } = details;
+			const type = getPostType( state, { name: id } );
+			const path = `${ type }/${ id }`;
+			
+			if ( 'draft' === status ) {
+				const options = {
+					path,
+					params: {
+						method: 'DELETE',
+					},
+				};
+				dispatch( requestActions.wpRequest( options ) );
+			}
+			
 			const organizers = organizersSelectors.getOrganizersInClassic( state );
 			const newOrganizers = organizers.filter( organizerId => organizerId !== id );
 
