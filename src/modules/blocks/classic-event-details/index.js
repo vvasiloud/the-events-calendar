@@ -12,6 +12,7 @@ import { __ } from '@wordpress/i18n';
  */
 import ClassicEventDetails from './container';
 import { Classic } from '@moderntribe/events/icons';
+import { editorDefaults } from '@moderntribe/common/utils/globals';
 
 /**
  * Module Code
@@ -39,6 +40,10 @@ export default {
 		detailsTitle: {
 			type: 'html',
 			default: '',
+		},
+		organizer: {
+			type: 'html',
+			default: editorDefaults().organizer ? editorDefaults().organizer : 0,
 		},
 		organizers: {
 			type: 'array',

@@ -39,6 +39,7 @@ const mergeProps = ( stateProps, dispatchProps, ownProps ) => {
 		addOrganizer: ( id, details ) => {
 			const organizers = organizersSelectors.getOrganizersInClassic( state );
 
+			ownProps.setAttributes( { organizer: id } );
 			ownProps.setAttributes( { organizers: uniq( [ ...organizers, id ] ) } );
 			dispatch( detailsActions.setDetails( id, details ) );
 			dispatch( organizersActions.addOrganizerInClassic( id ) );
