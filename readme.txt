@@ -238,6 +238,8 @@ Remember to always make a backup of your database and files before updating!
 * Fix - Use the correct date and time in the Day View time separator when Timezone Mode is set to "Manual time zones for each event". [TEC-3877]
 * Fix - Make sure events from latest past events display the featured image correctly. [TEC-3655]
 * Fix - Correctly integrate with the "Hello Elementor" theme to avoid issues with The Events Calendar and The Events Calendar PRO Views. [ECP-648]
+* Fix - Correct typo in style output from Customizer.  Thanks @apmatthews for catching and correcting this!
+* Fix - Avoid PHP warnings when linked post types are filtered out (thanks @baden03). [TEC#3533]
 * Tweak - Reduced the usage of the word "onwards" on list-style view date range headings where simpler headings are better suited. [TEC-3831]
 * Tweak - Move messages below the calendar grid in the mobile version of Month View. [TEC-3793]
 * Tweak - Display a message to let visitors know the selected Month View day has no events in mobile. [TEC-3812]
@@ -246,6 +248,9 @@ Remember to always make a backup of your database and files before updating!
 * Tweak - Updating lodash to 4.17.21. [TEC-3885]
 * Tweak - Prevent to list changes of hash on URL changes like `#content` [TEC-3890]
 * Tweak - Update Google Calendar link to use the timezone based on the Timezone Settings from the Calendar [TEC-3143]
+* Tweak - Add the `tribe_views_v2_after_setup_loop` filter to modify the loop context set up in the View (v2). [ECP-811]
+* Tweak - Add the `tribe_events_views_v2_by_day_view_grid_days` to allow pre-filling Month and Week Views (v2) Events. [ECP-529]
+* Tweak - Add the `tribe_events_views_v2_by_day_view_day_results` to allow fine-grained control over Month and Week Views (v2) Event data. [ECP-529]
 
 = [5.6.0] 2021-04-29 =
 
