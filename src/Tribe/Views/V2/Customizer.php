@@ -297,7 +297,6 @@ class Customizer {
 
 		// Event Title overrides.
 		if ( $customizer->has_option( $section->ID, 'event_title_color' ) ) {
-			bdump('one');
 			$css_template .= '
 				/* Event Title overrides. */
 				--tec-color-text-events-title: <%= global_elements.event_title_color %>;

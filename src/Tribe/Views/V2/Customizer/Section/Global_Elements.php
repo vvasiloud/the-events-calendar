@@ -236,7 +236,6 @@ final class Global_Elements extends \Tribe__Customizer__Section {
 				--tec-color-button-primary-hover: rgba({$accent_color_rgb},0.8);
 				--tec-color-button-primary-active: rgba({$accent_color_rgb},0.9);
 				--tec-color-button-primary-background: rgba({$accent_color_rgb},0.07);
-				--tec-color-icon-active: <%= global_elements.accent_color %>;
 			";
 		}
 

@@ -461,7 +461,7 @@ final class Month_View extends \Tribe__Customizer__Section {
 	 * @return string The HTML link element.
 	 */
 	public function get_accent_color_link() {
-		$label_text				 = __( 'Accent Color', 'the-events-calendar' );
+		$label_text = __( 'Accent Color', 'the-events-calendar' );
 		return $this->get_global_element_link( 'accent_color', $label_text );
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * The main service provider for the version 2 of the Views.
+ * The main service provider for the version 2 of the Views Customizer.
  *
  * @package Tribe\Events\Views\V2\Customizer
  * @since   TBD
@@ -8,7 +8,6 @@
 
 namespace Tribe\Events\Views\V2\Customizer;
 
-use Tribe\Events\Views\V2\Customizer;
 use Tribe\Events\Views\V2\Customizer\Section\Global_Elements;
 use Tribe\Events\Views\V2\Customizer\Section\Single_Event;
 use Tribe\Events\Views\V2\Customizer\Section\Month_View;
