@@ -216,7 +216,7 @@ final class Global_Elements extends \Tribe__Customizer__Section {
 		$apply_to_shortcode = apply_filters( 'tribe_customizer_should_print_shortcode_customizer_styles', false );
 		$tribe_events = $apply_to_shortcode ? '.tribe-events, #tribe-events-pg-template' : '.tribe-events:not( .tribe-events-view--shortcode ), #tribe-events-pg-template';
 
-		$css_template = "$tribe_events {\n";
+		$css_template = ":root {\n";
 
 		// Accent color overrides.
 		if ( $this->should_include_setting_css( 'accent_color' ) ) {
