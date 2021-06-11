@@ -981,6 +981,7 @@ class Hooks extends \tad_DI52_ServiceProvider {
 		}
 
 		return sprintf(
+			/* Translators: %1$s is the term for a single event */
 			_x(
 				'View %s Website',
 				'Capitalized label for the event website link.',
@@ -1009,6 +1010,7 @@ class Hooks extends \tad_DI52_ServiceProvider {
 		}
 
 		return sprintf(
+			/* Translators: %1$s is the term for a single venue */
 			_x(
 				'View %s Website',
 				'Capitalized label for the venue website link.',
@@ -1037,6 +1039,7 @@ class Hooks extends \tad_DI52_ServiceProvider {
 		}
 
 		return sprintf(
+			/* Translators: %1$s is the term for a single organizer */
 			_x(
 				'View %s Website',
 				'Capitalized label for the organizer website link.',
