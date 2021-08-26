@@ -5,20 +5,40 @@
  */
 
 .tribe-block__event-website {
+	padding: 20px 0;
+
 	a {
 		align-items: center;
-		border: 1px solid #e1e3e6;
-		background-color: #009fd4;
+		background-color: #334aff;
+		border-radius: 4px;
 		color: #fff;
 		display: inline-flex;
-		font-size: 1.125rem;
+		font-size: 1rem;
+		font-weight: bold;
 		justify-content: center;
-		min-height: 54px;
-		padding: 0 20px;
 		max-width: 100%;
+		min-height: 40px;
+		padding: 0 20px;
 
 		&:hover {
 			color: #fff;
 		}
 	}
+}
+
+/* Theme specific overrides */
+
+/* Twenty-twenty-one theme */ 
+.theme-twentytwentyone .tribe-block__event-website a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
+	background-color: #334aff;
+}
+
+/* Twenty-twenty theme */
+.theme-twentytwenty .tribe-block__event-website a {
+	font-size: 1.65rem;
+}
+
+/* Genesis */
+.theme-genesis .tribe-block__event-website a {
+	font-size: 1.65rem;
 }
