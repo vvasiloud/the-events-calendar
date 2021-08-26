@@ -4,22 +4,85 @@
  * @since  0.2.4-alpha
  */
 .tribe-block__organizer__details {
+	border-top: 1px solid #d5d5d5;
 	margin: 15px 0;
+	max-width: 45%;
+	padding: 22.5px 0;
 	position: relative;
 
+	@media screen and (min-width: 768px) {
+		max-width: 25%;
+		padding: 32px 0;
+	}
+
 	h3 {
-		font-weight: bold;
-		font-size: 1.3125rem;
-		color: #000;
+		font-size: 1rem;
+		font-weight: normal;
+		letter-spacing: normal;
+		line-height: 1.64;
 		margin-bottom: 4px;
 		margin-top: 0;
+
+		a {
+			color: #334aff;
+		}
 	}
 
 	p {
+		color: #141827;
 		font-size: 1rem;
-		color: #545D66;
+		font-weight: normal;
+		letter-spacing: normal;
+		line-height: 1.64;
 		margin-bottom: 2px;
 		margin-top: 0;
-		font-weight: normal;
+	}
+}
+
+.tribe-block__organizer__website a {
+	color: #334aff;
+	letter-spacing: normal;
+}
+
+/* Theme specific overrides */
+
+/* Twenty-twenty theme */
+.theme-twentytwenty {
+	.tribe-block__organizer__details {
+		h3, p {
+			font-size: 1.65rem;	
+		}
+	}
+}
+
+/* Divi */
+.theme-Divi {
+	.tribe-block__organizer__details {
+		h3, p {
+			padding-bottom: 0;		
+		}
+	}
+}
+
+/* Genesis */
+.theme-genesis {
+	.tribe-block__organizer__details {
+		h3, p {
+			font-size: 1.65rem;
+		}
+	}
+}
+
+/* Enfold */
+.theme-enfold .tribe-block__organizer__details h3 {
+	color: #334aff;
+}
+
+/* Avada */
+.theme-Avada .tribe-block__organizer__details {
+	max-width: 80%;
+
+	@media screen and (min-width: 768px) {
+		max-width: 40%;
 	}
 }
