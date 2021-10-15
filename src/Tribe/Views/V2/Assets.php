@@ -458,8 +458,8 @@ class Assets extends \tad_DI52_ServiceProvider {
 
 		tribe_asset(
 			$plugin,
-			'tribe-admin-v2-single-blocks',
-			'tribe-admin-single-blocks.css',
+			'tribe-events-admin-v2-single-blocks',
+			'tribe-events-admin-single-blocks.css',
 			[ 
 				'tec-variables-full',
 				'tec-variables-skeleton',
