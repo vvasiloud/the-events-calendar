@@ -6,7 +6,8 @@
 
 /* = Block editor container
 ============================================= */
-.post-type-tribe_events .wp-block {
+.post-type-tribe_events .wp-block,
+.editor-styles-wrapper .is-root-container .wp-block {
 	max-width: 85%;
 }
 
@@ -347,10 +348,13 @@
 	}
 
 	span {
+		padding-left: 30px;
+	}
+
+	& > button {
 		color: var(--tec-color-text-primary);
 		font-size: var(--tec-font-size-4);
 		font-weight: 700;
-		padding-left: 30px;
 	}
 
 	a {
